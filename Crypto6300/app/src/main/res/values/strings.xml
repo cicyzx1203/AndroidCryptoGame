@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Crypto6300</string>
+    <string name="title_activity_view_player_list">ViewPlayerListActivity</string>
+</resources>

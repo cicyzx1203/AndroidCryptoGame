@@ -1,0 +1,250 @@
+
+Test Case 1  		<error>
+   Start the Cryptogram Application :  False
+
+
+Test Case 2  		<error>
+   Enter Bet Points :  Not a number
+
+
+Test Case 3  		<error>
+   Bet Values :  <1
+
+
+Test Case 4  		<error>
+   Random Cryptogram :  Not Present
+
+
+Test Case 5  		<error>
+   Player could modify the game :  False
+
+
+Test Case 6  		<error>
+   Player could submit the answer :  False
+
+
+Test Case 7  		<error>
+   Player could view the result :  False
+
+
+Test Case 8  		<error>
+   Total Attempt times :  <0
+
+
+Test Case 9  		<error>
+   Total Attempt times :  >5
+
+
+Test Case 10 		<error>
+   Hint shows when two attempts left :  False
+
+
+Test Case 11 		<error>
+   Title value :  duplicate
+
+
+Test Case 12 		<error>
+   Encode letter :  encode itself
+
+
+Test Case 13 		<error>
+   Player could save the cryptogram :  False
+
+
+Test Case 14 		<error>
+   Player could view the confirmation :  False
+
+
+Test Case 15 		<error>
+   UserName textBox present :  no present
+
+
+Test Case 16 		<error>
+   Email textBox present :  no present
+
+
+Test Case 17 		<single>
+   email format correct :  @ present
+
+
+Test Case 18 		<error>
+   email format correct :  @ no present
+
+
+Test Case 19 		<error>
+   email length :  <=4
+
+
+Test Case 20 		<error>
+   Player get default 20 points :  False
+
+
+Test Case 21 		<error>
+   Value crytograms :  penaltize by point range <0
+
+
+Test Case 22 		<error>
+   Value crytograms :  penaltize by point range >10
+
+
+Test Case 23 		(Key = 1.1.2.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.2.)
+   Start the Cryptogram Application   :  True
+   login as                           :  administrator
+   Cryptogram Application UI          :  Adm UI working properly
+   sub-UI show up properly            :  <n/a>
+   Enter Bet Points                   :  <n/a>
+   Bet Values                         :  <n/a>
+   Random Cryptogram                  :  <n/a>
+   Player could modify the game       :  <n/a>
+   Player could submit the answer     :  <n/a>
+   Player could view the result       :  <n/a>
+   Total Attempt times                :  <n/a>
+   Hint shows when two attempts left  :  <n/a>
+   Game result                        :  <n/a>
+   Total points change                :  <n/a>
+   Title value                        :  <n/a>
+   Encode letter                      :  <n/a>
+   Player could save the cryptogram   :  <n/a>
+   Player could view the confirmation :  <n/a>
+   UserName textBox present           :  <n/a>
+   Email textBox present              :  <n/a>
+   email format correct               :  <n/a>
+   email length                       :  <n/a>
+   Player get default 20 points       :  <n/a>
+   Value crytograms                   :  penaltize by point range >0 & < 10
+
+
+Test Case 24 		(Key = 1.2.1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.1.1.0.0.0.0.)
+   Start the Cryptogram Application   :  True
+   login as                           :  new Player
+   Cryptogram Application UI          :  Player UI working properly
+   sub-UI show up properly            :  <n/a>
+   Enter Bet Points                   :  <n/a>
+   Bet Values                         :  <n/a>
+   Random Cryptogram                  :  <n/a>
+   Player could modify the game       :  <n/a>
+   Player could submit the answer     :  <n/a>
+   Player could view the result       :  <n/a>
+   Total Attempt times                :  <n/a>
+   Hint shows when two attempts left  :  <n/a>
+   Game result                        :  <n/a>
+   Total points change                :  <n/a>
+   Title value                        :  <n/a>
+   Encode letter                      :  <n/a>
+   Player could save the cryptogram   :  <n/a>
+   Player could view the confirmation :  <n/a>
+   UserName textBox present           :  Present
+   Email textBox present              :  present
+   email format correct               :  <n/a>
+   email length                       :  <n/a>
+   Player get default 20 points       :  <n/a>
+   Value crytograms                   :  <n/a>
+
+
+Test Case 25 		(Key = 1.3.3.1.0.0.0.0.0.0.0.0.0.0.1.2.1.1.0.0.0.0.0.0.)
+   Start the Cryptogram Application   :  True
+   login as                           :  Existing player
+   Cryptogram Application UI          :  Cryptogram UI working properly
+   sub-UI show up properly            :  New Game UI working properly
+   Enter Bet Points                   :  <n/a>
+   Bet Values                         :  <n/a>
+   Random Cryptogram                  :  <n/a>
+   Player could modify the game       :  <n/a>
+   Player could submit the answer     :  <n/a>
+   Player could view the result       :  <n/a>
+   Total Attempt times                :  <n/a>
+   Hint shows when two attempts left  :  <n/a>
+   Game result                        :  <n/a>
+   Total points change                :  <n/a>
+   Title value                        :  unique
+   Encode letter                      :  encode other letter
+   Player could save the cryptogram   :  True
+   Player could view the confirmation :  True
+   UserName textBox present           :  <n/a>
+   Email textBox present              :  <n/a>
+   email format correct               :  <n/a>
+   email length                       :  <n/a>
+   Player get default 20 points       :  <n/a>
+   Value crytograms                   :  <n/a>
+
+
+Test Case 26 		(Key = 1.3.3.2.1.0.1.1.1.1.2.1.1.2.0.0.0.0.0.0.0.0.0.0.)
+   Start the Cryptogram Application   :  True
+   login as                           :  Existing player
+   Cryptogram Application UI          :  Cryptogram UI working properly
+   sub-UI show up properly            :  Random UI working properly
+   Enter Bet Points                   :  Number
+   Bet Values                         :  <n/a>
+   Random Cryptogram                  :  Present
+   Player could modify the game       :  True
+   Player could submit the answer     :  True
+   Player could view the result       :  True
+   Total Attempt times                :  <=5
+   Hint shows when two attempts left  :  True
+   Game result                        :  Won before 2 attempts remaining
+   Total points change                :  change
+   Title value                        :  <n/a>
+   Encode letter                      :  <n/a>
+   Player could save the cryptogram   :  <n/a>
+   Player could view the confirmation :  <n/a>
+   UserName textBox present           :  <n/a>
+   Email textBox present              :  <n/a>
+   email format correct               :  <n/a>
+   email length                       :  <n/a>
+   Player get default 20 points       :  <n/a>
+   Value crytograms                   :  <n/a>
+
+
+Test Case 27 		(Key = 1.3.3.2.1.0.1.1.1.1.2.1.2.1.0.0.0.0.0.0.0.0.0.0.)
+   Start the Cryptogram Application   :  True
+   login as                           :  Existing player
+   Cryptogram Application UI          :  Cryptogram UI working properly
+   sub-UI show up properly            :  Random UI working properly
+   Enter Bet Points                   :  Number
+   Bet Values                         :  <n/a>
+   Random Cryptogram                  :  Present
+   Player could modify the game       :  True
+   Player could submit the answer     :  True
+   Player could view the result       :  True
+   Total Attempt times                :  <=5
+   Hint shows when two attempts left  :  True
+   Game result                        :  Won after 2 attempts remaining
+   Total points change                :  no change
+   Title value                        :  <n/a>
+   Encode letter                      :  <n/a>
+   Player could save the cryptogram   :  <n/a>
+   Player could view the confirmation :  <n/a>
+   UserName textBox present           :  <n/a>
+   Email textBox present              :  <n/a>
+   email format correct               :  <n/a>
+   email length                       :  <n/a>
+   Player get default 20 points       :  <n/a>
+   Value crytograms                   :  <n/a>
+
+
+Test Case 28 		(Key = 1.3.3.2.1.0.1.1.1.1.2.1.3.1.0.0.0.0.0.0.0.0.0.0.)
+   Start the Cryptogram Application   :  True
+   login as                           :  Existing player
+   Cryptogram Application UI          :  Cryptogram UI working properly
+   sub-UI show up properly            :  Random UI working properly
+   Enter Bet Points                   :  Number
+   Bet Values                         :  <n/a>
+   Random Cryptogram                  :  Present
+   Player could modify the game       :  True
+   Player could submit the answer     :  True
+   Player could view the result       :  True
+   Total Attempt times                :  <=5
+   Hint shows when two attempts left  :  True
+   Game result                        :  Lose
+   Total points change                :  no change
+   Title value                        :  <n/a>
+   Encode letter                      :  <n/a>
+   Player could save the cryptogram   :  <n/a>
+   Player could view the confirmation :  <n/a>
+   UserName textBox present           :  <n/a>
+   Email textBox present              :  <n/a>
+   email format correct               :  <n/a>
+   email length                       :  <n/a>
+   Player get default 20 points       :  <n/a>
+   Value crytograms                   :  <n/a>
+

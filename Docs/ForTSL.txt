@@ -1,0 +1,116 @@
+# Main Application
+	Start the Cryptogram Application:
+		True.						[property start]
+		False.						[error]
+	
+	login as:
+		administrator.				[property adm]
+		new Player.					[property newPlayer]
+		Existing player. 			[property exPlayer]
+		
+	Cryptogram Application UI:
+		Player UI working properly.			[if start && newPlayer][property playerUI]
+		Adm UI working properly.			[if start && adm][property admUI]
+		Cryptogram UI working properly.		[if start && exPlayer][property gameUI]
+		
+	
+# Cryptogram UI
+
+	sub-UI show up properly:
+		New Game UI working properly.		[if gameUI && exPlayer][property newGameUI]
+		Random UI working properly. 		[if gameUI && exPlayer][property randomGameUI]
+
+	Enter Bet Points:
+		Number.								[if gameUI && randomGameUI][property numBet]
+                Not a number.           [error]
+	
+        
+	Bet Values:
+        <1.                 		[error]
+        <=10                       			[if numBet && randomGameUI]
+        >10		            		[error]
+				
+	Random Cryptogram:
+		Present.							[if numBet && randomGameUI][property presentGame]
+		Not Present.				[error]
+	
+	Player could modify the game:
+		True.								[if numBet && randomGameUI && presentGame]
+		False.						[error]
+	
+	Player could submit the answer:
+		True.								[if numBet && randomGameUI && presentGame]
+		False.						[error]		
+	
+	Player could view the result:
+		True.								[if numBet && randomGameUI && presentGame]
+		False.						[error]
+		
+	Total Attempt times:
+		<0. 						[error]
+		<=5.								[if numBet && randomGameUI && presentGame]
+		>5.							[error]
+		
+	Hint shows when two attempts left:
+		True.								[if numBet && randomGameUI && presentGame]
+		False.                      [error]
+       
+    Game result:
+        Won before 2 attempts remaining.	[if numBet && randomGameUI && presentGame][property wonBefore2attmp]
+        Won after 2 attempts remaining.		[if numBet && randomGameUI && presentGame][property wonAfter2attmp]
+        Lose.								[if numBet && randomGameUI && presentGame][property loseGame]
+		
+	Total points change:
+		no change.							[if numBet && randomGameUI && presentGame && wonAfter2attmp || loseGame]
+		change.								[if numBet && randomGameUI && presentGame && wonBefore2attmp]
+
+# Create New Game UI
+    Title value:
+            unique.									[if newGameUI && exPlayer]
+            duplicate.                       [error]     	
+		
+	Encode letter:
+            encode itself.               [error]
+       	    encode other letter.				[if newGameUI && exPlayer]
+        
+	Player could save the cryptogram:
+            True.                            	[if newGameUI && exPlayer][property cryptoSaved]
+            False.                       [error]
+        
+        Player could view the confirmation:
+            True.						[if newGameUI && cryptoSaved && exPlayer]
+            False.                        [error] 
+        
+        Player's points increased if saved:
+            5                                		[if newGameUI && cryptoSaved && exPlayer]
+            not 5                         [error]
+
+# Player UI:
+	UserName textBox present:
+		Present.					[if newPlayer][property userNamePresent]
+		no present.         [error]
+	
+	Email textBox present:
+		present.				[property emailPresent][if newPlayer]
+		no present. 	[error]
+	
+	email format correct:
+		@ present.		[single][if emailPresent && newPlayer][property @present]
+		@ no present.	[error]	[if emailPresent]
+	email length:
+                <=4.            [error]
+                >4.             [if emailPresent && @present && newPlayer]
+	Player get default 20 points:
+		True.					[if userNamePresent && emailPresent && newPlayer]
+		False.			[error]
+		
+# Adm UI	
+	Value crytograms:
+      	penaltize by point range <0.             [error]
+		penaltize by point range >0 & < 10.		[if adm]
+		penaltize by point range >10.            [error]
+		Do nothing		[if adm]
+	
+
+		
+		
